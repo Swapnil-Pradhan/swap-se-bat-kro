@@ -18,12 +18,12 @@ padding: 2%;
 border-radius: 69px 0 69px 69px;
 background: #291615;
 float: right;
-font-family: sans-serif;
+font-family: Tahoma, sans-serif;
 }
 
 @font-face{
-src: url("Product.ttf");
 font-family: Product;
+src: url("Product.ttf");
 }
 
 .me>div{
