@@ -18,6 +18,12 @@ padding: 2%;
 border-radius: 69px 0 69px 69px;
 background: #291615;
 float: right;
+font-family: sans-serif;
+}
+
+@font-face{
+src: url("Product.ttf");
+font-family: Product;
 }
 
 .me>div{
@@ -27,6 +33,7 @@ box-sizing: border-box;
 border-radius: 0 69px 69px 69px;
 background: linear-gradient(to bottom left, #35003c, #3c2f00);
 display: inline-block;
+font-family: Product;
 }
 
 @keyframes epic{
