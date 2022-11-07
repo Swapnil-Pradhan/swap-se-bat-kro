@@ -1,0 +1,103 @@
+body{
+margin: 0;
+padding: 0;
+color: white;
+}
+
+#chtbx{
+width: 100%;
+margin: 0;
+padding: 5% 0 12% 0;
+display: grid;
+grid-template-columns: 100%;
+font-size: 269%;
+}
+
+.tu>div{
+padding: 2%;
+border-radius: 69px 0 69px 69px;
+background: #291615;
+float: right;
+}
+
+.me>div{
+padding: 2%;
+animation: 3s epic infinite alternate;
+box-sizing: border-box;
+border-radius: 0 69px 69px 69px;
+background: linear-gradient(to bottom left, #35003c, #3c2f00);
+display: inline-block;
+}
+
+@keyframes epic{
+0%{
+border: 3px solid orangered;
+}
+33.33%{
+border: 3px solid purple;
+}
+100%{
+border: 3px solid gold;
+}
+}
+
+#msg{
+position: fixed;
+bottom: 0;
+margin: 0;
+background: rgba(123, 123, 256, .2);
+border-radius: 50px 50px 0 0;
+width: 98%;
+height: 7%;
+padding: 1%;
+display: flex;
+align-items: center;
+transition: .3s;
+}
+
+textarea{
+border-radius: 69px;
+width: 90%;
+height: 90%;
+background: rgba(23, 23, 23, .5);
+color: white;
+font-size: 345%;
+padding: 0 2% 0 2%;
+font-family: sans-serif;
+overflow: hidden;
+backdrop-filter: blur(9px);
+}
+
+#msg>span{
+border-radius: 50%;
+width: 10%;
+aspect-ratio: 1/1;
+border: 2px solid white;
+margin-left: 1%;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+input{
+height: 100%;
+width: 100%;
+background: transparent;
+color: #00abff;
+font-weight: bold;
+font-size: 400%;
+transition: .2s;
+backdrop-filter: blur(9px);
+}
+
+input:active{
+background: rgba(255, 255, 255, .3);
+}
+
+a{
+color: #158cff;
+text-decoration: none;
+}
