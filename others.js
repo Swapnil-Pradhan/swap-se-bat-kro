@@ -106,7 +106,7 @@ ripples.remove();
 });
 
 function ls(){
-firebase.database.ref(localStorage.getItem("name")+"/ls").set({
+firebase.database().ref(localStorage.getItem("name")+"/ls").set({
 ls: Date.now()
 });
 }
