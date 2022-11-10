@@ -9,6 +9,7 @@ if(nams.includes(localStorage.getItem("name"))===false){
 localStorage.removeItem("name");
 alert("now you exist in parallel universe.");
 } else{
+setInterval(ls, 9999);
 detail();
 chat();
 }
@@ -23,6 +24,7 @@ Chat: [
 ["tu", Date.now(), "Hi, have a great time!"],
 ["me", Date.now()+1, "Me kese manlun ki tu "+nm+" he?"]
 ]}).then(()=>{
+setInterval(ls, 9999);
 detail();
 chat();
 });
@@ -102,6 +104,12 @@ ripples.remove();
 }, 1010);
 });
 });
+
+function ls(){
+firebase.database.ref(localStorage.getItem("name")+"/ls").set({
+ls: Date.now()
+});
+}
 
 document.addEventListener("keyup", function (e) { 
 var keyCode=e.keyCode ? e.keyCode : e.which; 
